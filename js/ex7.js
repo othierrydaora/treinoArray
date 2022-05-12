@@ -1,5 +1,5 @@
 /*07. Implementar uma função que recebendo um número de início e fim, retorne um array contendo uma sequência do número final até o número inicial. */
-function def(ini ,en) {
+function def(en ,ini) {
     let x = [en - ini + 1];
     let z = en;
     for (let i = en; i >= ini; i--) {
@@ -9,4 +9,4 @@ function def(ini ,en) {
     console.log(x);
 }
 
-def(2, 6);
+def(6, 2);
