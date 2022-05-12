@@ -13,7 +13,11 @@ public int[] Def(int ini, int en)
 
 public void Heresia(int[] args)
 {
-    for (int i = 0; i < args.Length; i++) Console.Write(args[i] + ", ");
+    for (int i = 0; i < args.Length; i++)
+    {
+        if (i == 0) Console.Write("[ {0}, ", args[i]);
+        else if (i == args.Length - 1) Console.Write("{0} ]", args[i]);
+        else Console.Write(args[i] + ", ");
+    }
 }
-
 Heresia(Def(5, 9));
